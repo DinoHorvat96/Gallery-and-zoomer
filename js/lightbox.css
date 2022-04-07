@@ -1,0 +1,31 @@
+@charset "utf-8";
+/* CSS Document */
+
+#lightbox {
+	margin: auto;
+    width: 100%;
+	zoom:1;	
+}
+#lightbox .lightbox {
+	border: 3px solid #333333;
+    float: left;
+    font-family: Trebuchet,Tahoma,Arial,sans-serif;
+    font-size: 11px;
+    font-weight: normal;
+    margin: 3px;
+    position: relative;
+    text-decoration: none;
+    vertical-align: top;
+}
+#lightbox .lightbox a{
+	margin:0;
+}
+#lightbox .lightbox:hover, #lightbox .lightbox a:hover{
+	opacity:0.75;
+}
+#lightbox .lightbox img{
+	display:block;
+	border:none;
+	margin:0;
+}
+#lightbox .lightbox div {display:none;}

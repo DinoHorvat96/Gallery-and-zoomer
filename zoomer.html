@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+
+<title>Zoomer</title>
+
+
+<script src="js/jqueryZoom.js"></script>
+<script src="js/jqueryAnythingzoomer.js"></script>
+<script>
+$(function() {
+
+$(".zoom").anythingZoomer();
+
+$('.president')
+.bind('click', function(){
+return false;
+})
+.bind('mouseover click', function(){
+var loc = $(this).attr('rel');
+if (loc && loc.indexOf(',') > 0) {
+loc = loc.split(',');
+$('.zoom').anythingZoomer( loc[0], loc[1] );
+}
+return false;
+});
+
+});
+</script>
+<link href="js/AnythingZoomer.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<h1>Zoomer</h1>
+
+
+
+<div class="zoom">
+
+<div class="small"><img src="images/Earth_small.png" ></div>
+
+<div class="large"><img src="images/Earth.png" ></div>
+
+</div>
+
+
+<body>
+</body>
+</html>
